@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccounts", "BankAccounts\BankAccounts.csproj", "{A686EDAA-CAAC-4B95-BF9C-0E8A2E6D0800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{AEF3A2AD-F849-4FDB-964A-BC9F79D62B72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A686EDAA-CAAC-4B95-BF9C-0E8A2E6D0800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A686EDAA-CAAC-4B95-BF9C-0E8A2E6D0800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A686EDAA-CAAC-4B95-BF9C-0E8A2E6D0800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A686EDAA-CAAC-4B95-BF9C-0E8A2E6D0800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF3A2AD-F849-4FDB-964A-BC9F79D62B72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF3A2AD-F849-4FDB-964A-BC9F79D62B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF3A2AD-F849-4FDB-964A-BC9F79D62B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF3A2AD-F849-4FDB-964A-BC9F79D62B72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
