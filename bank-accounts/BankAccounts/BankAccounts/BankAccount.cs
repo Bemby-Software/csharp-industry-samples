@@ -7,10 +7,10 @@ namespace BankAccounts
         private readonly AccountType _type;
         private double _balance;
 
-        private const double HelpToBuyInterestRatePercentage = 1;
-        private const double PersonalInterestRatePercentage = 0.5;
-        private const double LifetimeInterestRatePercentage = 1.5;
-        private const double FlexibleInterestRatePercentage = 0.25;
+        private const double HelpToBuyInterestRatePercentage = 0.01;
+        private const double PersonalInterestRatePercentage = 0.005;
+        private const double LifetimeInterestRatePercentage = 0.015;
+        private const double FlexibleInterestRatePercentage = 0.025;
         
 
         public BankAccount(AccountType type, double balance = 0)
