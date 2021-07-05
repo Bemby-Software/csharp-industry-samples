@@ -1,4 +1,6 @@
-﻿using BankAccounts;
+﻿using System.Collections.Generic;
+using BankAccounts.Abstractions;
+using BankAccounts.Accounts;
 using static System.Console;
 
 namespace Console
@@ -7,11 +9,20 @@ namespace Console
     {
         static void Main(string[] args)
         {
-            var lifeTimeAccount = new BankAccount(AccountType.Lifetime, 300);
-            var helpToBuyAccount = new BankAccount(AccountType.HelpToBuy, 2000);
-            var flexAccount = new BankAccount(AccountType.Flexible, 50);
-            var personalAccount = new BankAccount(AccountType.Personal, 600);
-            
+            var accounts = new List<IBankAccount>()
+            {
+                LifetimeAccount.Create(balance: 300),
+                HelpToBuyAccount.Create(balance: 2000),
+                FlexibleAccount.Create( balance: 50),
+                PersonalAccount.Create(balance: 600),
+            };
+
+            foreach (IBankAccount account in accounts)
+            {
+                WriteLine($"Calculating interest for account {account.Type} current balance {account.Balance}");
+                account.CalculateInterest();
+                WriteLine($"Calculated interest for account {account.Type} new balance is {account.Balance}");
+            }
             
         }
     }
